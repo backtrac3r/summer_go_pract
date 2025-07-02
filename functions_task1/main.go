@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func findElement(slice []int, element int) int {
+func findElem(slice []int, element int) int {
 	for i, v := range slice {
 		if v == element {
 			return i
@@ -33,7 +33,7 @@ func main() {
 	fmt.Println("Исходный срез:", numbers)
 
 	elementToFind := 5
-	index := findElement(numbers, elementToFind)
+	index := findElem(numbers, elementToFind)
 	if index != -1 {
 		fmt.Printf("Элемент %d найден по индексу %d\n", elementToFind, index)
 	} else {
