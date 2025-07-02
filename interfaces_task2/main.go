@@ -14,6 +14,7 @@ type Car struct {
 func (c Car) Move() {
 	fmt.Printf("Автомобиль %s едет по дороге.\n", c.Model)
 }
+
 func (c Car) Stop() {
 	fmt.Printf("Автомобиль %s останавливается.\n", c.Model)
 }
